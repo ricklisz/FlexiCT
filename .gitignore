@@ -1,0 +1,12 @@
+# Ignore the demo workspace and generated/private demo assets.
+demo/
+tests/
+results/
+tmp/
+.tmp_radio_repro/
+__pycache__/
+*.py[cod]
+AGENTS.md
+CLAUDE.md
+.codex
+.agents

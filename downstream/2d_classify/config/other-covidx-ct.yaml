@@ -1,0 +1,17 @@
+model:
+  model_name: "raidium/curia"
+  num_classes: 3
+# pretrained: '/path/to/project-data/dinov3_weights/dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth'
+pretrained: '/path/to/project-data/dinov3_weights/dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth'
+dataset_name: "raidium/CuriaBench"
+dataset_config: "covidx-ct"
+use_feature_caching: false
+patch_size: 16
+img_size: 512
+epochs: 20 # 20
+batch_size: 64
+learning_rate: 0.0002 # 0.0002
+num_workers: 2
+eval_steps: 200
+greedy: false
+output_dir: "/path/to/project-data/results/covidx-ct/biomedclip"
