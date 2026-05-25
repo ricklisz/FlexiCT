@@ -107,15 +107,11 @@ For retrieval reproduction commands, see
 Please cite the arXiv preprint:
 
 ```bibtex
-@misc{li2026universalctrepresentations,
-  title = {Universal CT Representations from Anatomy to Disease Phenotype through Agglomerative Pretraining},
-  author = {Yuheng Li and Yuan Gao and Haoyu Dong and Yuxiang Lai and Shansong Wang and Mojtaba Safari and James E. Baciak and Xiaofeng Yang},
-  year = {2026},
-  eprint = {2605.21906},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.CV},
-  doi = {10.48550/arXiv.2605.21906},
-  url = {https://arxiv.org/abs/2605.21906}
+@article{li2026universal,
+  title={Universal CT Representations from Anatomy to Disease Phenotype through Agglomerative Pretraining},
+  author={Li, Yuheng and Gao, Yuan and Dong, Haoyu and Lai, Yuxiang and Wang, Shansong and Safari, Mojtaba and Baciak, James E and Yang, Xiaofeng},
+  journal={arXiv preprint arXiv:2605.21906},
+  year={2026}
 }
 ```
 
