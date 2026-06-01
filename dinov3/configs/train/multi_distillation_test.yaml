@@ -1,0 +1,51 @@
+MODEL:
+  META_ARCHITECTURE: MultiDistillationMetaArch
+multidistillation:
+  enabled: true
+  global_batch_size: 256
+  students:
+  - name: ResEncL_3D
+    config_path: dinov3/configs/distillation_UNet/ResEncL_3D.yaml
+    ranks_range:
+    - 0
+    - 4
+distillation:  # teacher
+  enabled: true
+  full_cfg_path: dinov3/configs/train/fleximeddinov3_b_ct_3D_randcrop_pretrain.yaml
+  checkpoint_path: "model.pth"
+train:
+  dataset_path: null
+  saveckp_freq: 20
+  seed: 0
+  num_workers: 8
+  OFFICIAL_EPOCH_LENGTH: 1000
+  monitor_gradient_norm: false
+  chunk_schedule: []
+  cache_dataset: true
+  use_teacher_head: true
+  learn_from_teacher_tokens: false
+  centering: sinkhorn_knopp
+  checkpointing: true
+  checkpointing_full: false
+  compile: true
+  cudagraphs: false
+  cell_augmentation: false
+  cell_augmentation_type: hpa
+  sharded_eval_checkpoint: true
+crops:
+  global_crop_overlap: 0.33
+  local_crops_number: 8
+  global_crops_size:
+  - 128
+  - 128
+  - 128
+  local_crops_size:
+  - 64
+  - 64
+  - 64
+  localcrops_subset_of_globalcrops: false
+  share_color_jitter: false
+  horizontal_flips: true
+checkpointing:
+  period: 1000
+  max_to_keep: 2

@@ -1,0 +1,37 @@
+# PyTorch 2.8 must come from the CUDA 12.8 wheel index. Keep the
+# local-version pins so pip cannot silently resolve CPU wheels.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.8.0+cu128
+torchvision==0.23.0+cu128
+
+# Core numerical, image, and CT volume IO dependencies.
+numpy==2.3.2
+pandas==2.3.2
+pillow==11.3.0
+lmdb==1.7.3
+SimpleITK==2.5.2
+nibabel==5.3.2
+tqdm==4.67.1
+PyYAML>=6
+omegaconf>=2.3
+termcolor==3.1.0
+submitit==1.5.3
+
+# Medical/volumetric augmentation stack used by the CT pretraining paths.
+monai==1.5.1
+batchgeneratorsv2==0.3.0
+
+# Report-guided alignment and text encoder support.
+transformers==4.56.1
+tokenizers==0.22.0
+safetensors==0.6.2
+accelerate==1.11.0
+huggingface-hub==0.34.4
+ftfy==6.3.1
+regex==2025.7.34
+
+# Evaluation utilities retained for in-repo eval scripts.
+torchmetrics==1.8.1
+scikit-learn==1.7.1
+openpyxl==3.1.5

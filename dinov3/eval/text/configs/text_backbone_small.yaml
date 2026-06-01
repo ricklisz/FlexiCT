@@ -1,0 +1,16 @@
+# Small Text Transformer Configuration
+# Suitable for medical imaging with limited GPU memory
+# 
+# This is a smaller text encoder (384d, 6 heads, 12 layers)
+# compared to the full CLIP text encoder (1280d, 20 heads, 24 layers)
+
+model_name: text_small_384d6h12l
+context_length: 77
+vocab_size: 49408  # CLIP BPE vocabulary size
+dim: 384
+num_heads: 6
+num_layers: 12
+ffn_ratio: 4.0
+is_causal: true
+dropout_prob: 0.0
+ls_init_value: null
