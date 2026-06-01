@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://ricklisz.github.io/flexict.github.io/"><img alt="Project page" src="https://img.shields.io/badge/Project-Page-1f6feb"></a>
   <a href="https://arxiv.org/abs/2605.21906"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2605.21906-b31b1b"></a>
-  <a href="https://huggingface.co/ricklisz123/FlexiCT"><img alt="Hugging Face model placeholder" src="https://img.shields.io/badge/Hugging%20Face-coming%20soon-ffcc4d"></a>
+  <a href="https://huggingface.co/ricklisz123/FlexiCT"><img alt="Hugging Face model" src="https://img.shields.io/badge/Hugging%20Face-models-ffcc4d"></a>
 </p>
 
 FlexiCT is a CT foundation model family trained through agglomerative continual
